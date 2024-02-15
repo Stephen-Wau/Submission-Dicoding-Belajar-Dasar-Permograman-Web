@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Arvo', monospace;
+    background-color: #FFFBF5;
+}
+
+/* CSS untuk semua content Header */
+header {
+    display: flex;
+    background-color: white;
+    padding: 0.5em;
+    gap: 2rem;
+    justify-content: space-between;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+    .icon-content {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .icon-content h1 {
+        margin: auto;
+    }
+    .icon-content img {
+        height: 60px;
+    }
+
+    /* CSS untuk Navbar */
+    nav {
+        margin: auto 0;
+        font-size: 1.5rem;
+    }
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style-type: none;
+    }
+    nav ul a{
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 5px;
+        color: black;
+        transition: all 0.3s ease-in-out;
+    }
+    nav ul a:hover{
+        background-color: rgb(41, 41, 37);
+        color: azure;
+        font-style: italic;
+        padding: 5px 7px;
+        transition: all 0.3s ease-in-out;
+    }
+    #btn-content{
+        margin: auto 0;
+    }
+    button{
+        width: 150px;
+        margin: 0;
+        padding: 10px 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+}
+
+/* CSS untuk content Match Fixtures */
+#match-fixtures h2{
+    position: absolute;
+    margin-top: -40px;
+    color: black;
+}
+#match-fixtures{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 50px 30px 30px;
+}
+    /* CSS untuk div card match */
+    .card-match {
+        border: 2px solid black;
+        display: flex;
+        width: 22vw;
+        border-radius: 10px;
+        border-left: 7px solid rgb(255, 204, 0);
+        background-color: rgb(249, 246, 242);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+        .card-match:hover {
+            transform: translateY(-7px); /* Menggeser div ke atas */
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .match-name{
+            display: flex;
+            flex-direction: column;
+            padding: 5px 20px 5px 5px;
+            margin: 10px 0px 10px 0px;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            flex: 3.5;
+        }
+            .match-name div{
+                display: flex;
+            }
+                .match-date {
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 3px;
+                }
+                .match-leangue {
+                    font-size: 12px;
+                    margin-bottom: 12px;
+                }
+                .icon-match {
+                    width: 40px;
+                }
+                .match-name .vs {
+                    margin: auto 0;
+                    padding-left: 3px;
+                }
+        .match-time {
+            flex: 2.5;
+            padding: 5px;
+            font-size: 12px;
+            margin: 10px;
+        }
+            span {
+                color: orangered;
+                font-weight: 700;
+            }
+            .view-match{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+            .match-time .view-match button {
+                width: 80%;
+                font-size: 12px;
+                margin-top: 15px;
+                border: 1px solid  rgba(0, 0, 0, 0.2);
+                border-radius: 25px;
+                background-color: rgb(249, 246, 242);
+            }
+            .match-time .view-match button:hover {
+                background-color: rgb(236, 232, 229);
+            }
+
+/* CSS untuk content main */
+.content-menu {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+}
+.content-menu .content2 {
+    flex: 4; 
+}
+
+/* CSS untuk content Article Home & Trophy */
+.content-menu .content2 article {
+    margin: 10px 0 25px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+}
+    .content-head{
+        display: flex;
+    }
+    .content-head h2{
+        margin: 10px auto;
+    }
+    .content-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .content2 .content-img {
+        display: flex;
+    }
+    .content2 .content-img img {
+        width: 400px;
+        border: rgb(255, 204, 0) 2px solid;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .content-main p{
+        margin-top: 10px;
+        text-align: justify;
+    }
+    .content-main ol{
+        padding-left: 25px;
+    }
+
+/* CSS untuk content Card Player */
+.content-menu aside{
+    background-color: white;
+    flex: 2;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    padding: 10px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+    aside h2{
+        text-align: center;
+    }
+    /* CSS untuk Card Player */
+    aside #outer-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    aside .box {
+        position: relative;
+        height: 9rem;
+        width: 9rem;
+        margin: 20px 5px 10px 5px;
+    }
+        aside .box .imgBox:hover {
+            transform: translate(-1rem, -1rem);
+        }
+        
+        aside .box:hover .card-box-content {
+            transform: translate(1rem, 1rem);
+        }
+        .imgBox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            transition: all 0.5s ease-in-out;
+            border-radius: 5px;
+        }
+        .imgBox img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            resize: both;
+            border:2px solid rgb(255, 204, 0);
+            border-radius: 5px;
+        }
+        .card-box-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 140px;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            background-color: #fff;
+            z-index: 1;
+            text-align: center;
+            transition: 0.5s ease-in-out;
+            border: solid 2px red;
+            border-radius: 5px;
+        }
+        .card-box-content h2 {
+            display: block;
+            font-size: 10px;
+            color: #111;
+            font-weight: 500;
+            line-height: 0.8rem;
+            letter-spacing: 1px;
+            margin: 0 auto;
+        }    
+        .card-box-content p {
+            color: red;
+            font-size: 8px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+/* CSS untuk Produk */
+.content-product {
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+    .content-product h2{
+        margin-top: 15px;
+    }
+    .content-product .outer-card{
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        flex-wrap: wrap;
+        padding : 20px 30px 30px; 
+        background-color: white;
+    }
+    .outer-card .card-product{
+        position: relative;
+        max-width : 300px;
+        height : 215px;  
+        background-color : #fff;
+        margin : 35px;
+        padding : 20px 15px;
+
+        display : flex;
+        flex-direction : column;
+        box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+        transition : 0.3s ease-in-out;
+        border-radius : 15px;
+        border: 5px gold solid;
+    }
+    .outer-card .card-product:hover{
+        height : 280px;    
+    }
+    .outer-card .card-product .image{
+        position : relative;
+        width : 180px;
+        height : 210px;
+        top : -30%;
+        box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+        z-index : 1;
+        border: 5px red solid;
+        border-radius : 15px;
+    }
+    .outer-card .card-product .image img{
+        width : 170px;
+        height : 200px;
+        border-radius : 10px;
+    }
+
+    .outer-card .card-product .content-card{
+        position : relative;
+        top : -100px;
+        padding : 15px 15px 10px;
+        color : #111;
+        text-align : center;
+        visibility : hidden;
+        opacity : 0;
+        transition : 0.3s ease-in-out;          
+    }      
+    .outer-card .card-product:hover .content-card{
+        margin-top : 25px;
+        visibility : visible;
+        opacity : 1;
+        transition-delay: 0.2s;      
+    }
+    .outer-card .card-product .content-card h3{
+        color: red;
+    }
+    .outer-card .card-product .content-card p{
+        margin: 3px 0 5px;
+        font-size: 14px;
+    }
+    .btn-card button{
+        width: auto;
+        font-size: 16px;
+        padding: 7px 15px;
+    }
+    .btn-card button:hover{
+        background-color: rgb(255, 204, 0);   
+    }
+  
+/* CSS untuk bagian Sponsor */
+.content-sponsor{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 30px 0;
+    padding: 15px 0;
+}
+    .content-sponsor .main-sponsor{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content-sponsor .main-sponsor img{
+        width: 160px;
+        margin: 0 15px;
+    }
+    .content-sponsor .side-sponsor{
+        width: 60vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px auto;
+    }
+    .content-sponsor .side-sponsor img{
+        width: 100px;
+        margin: 0 15px;
+    }
+
+/* CSS untuk tag Footer */
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+    footer .social-media{
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .social-media i{
+        padding: 15px;
+    }
+    footer .social-media img{
+        width: 40px;
+        margin: 0 5px;
+    }
+        .social-media .media-text{
+            display: flex;
+            flex: 3;
+        }
+        .social-media .media-text p{
+            font-size: 18px;
+            font-weight: 700;
+            margin: auto 0;
+        }
+        .social-media .media-icon{
+            flex: 3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin: auto 0;
+        
+        }
+        .social-media .media-icon a{
+            text-decoration: none;
+            color: #111;
+        }
+        .social-media .media-icon i{
+            margin: auto 25px;
+            padding: 0;
+        }
+        .social-media .media-icon i:hover{
+            color: rgb(255, 204, 0);
+            transition: all 0.3s ease-in-out;
+        }
+
+    footer .footer-content{
+       text-align: center;
+    }
+        footer .footer-content p{
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: #414040;
+        }
+
+/* Mode Gelap */
+.dark-mode {
+    header, a, .card-match, #outer-box, aside div h2, .content-menu aside, .content-menu .content2 article,
+    main .content-product, .content-product .outer-card, .content-product, .content-product h2, .centered-alert,
+    .content-sponsor, footer, .social-media,footer .footer-content p{
+        background-color: #111;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    .content-menu, .content #match-fixtures, .content-product,
+     .content-product, .match-time .view-match button{
+        background-color: #414040;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    .match-time .view-match button:hover{
+        background-color: rgb(255, 204, 0);
+    }
+    #match-fixtures, .content-head h2, h2, aside h2, .content-product h2{
+        color: rgb(255, 204, 0) !important;
+    }
+    .card-box-content div h2{
+        background-color: #fff !important;
+    }
+    .content-sponsor .main-sponsor img, .content-sponsor .side-sponsor img{
+        filter: brightness(0) invert(1);
+    }
+    .social-media .media-icon a{
+        /* color: #414040; */
+        color: rgb(255, 204, 0);
+    }
+    .social-media .media-icon i:hover{
+        color: #414040;
+        transition: all 0.3s ease-in-out;
+    }
+}
+    .body-dark{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: #414040;
+    }
+
+/* Pop-Up untuk view match */
+.centered-alert {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    width: 25vw;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid rgb(255, 204, 0);
+    box-shadow: 0 0 10px rgba(239, 192, 5, 0.1);
+    border-radius: 5px;
+    z-index: 9999;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blur-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
+.show {
+    opacity: 1;
+  }
+    .centered-alert h2{
+        color: rgb(255, 204, 0);
+        margin: 5px auto 10px;
+    }
+    .centered-alert th{
+        padding-top: 10px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .centered-alert td{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .centered-alert #div-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    #btn-close-popup{
+        width: 50%;
+        font-weight: 700;
+    }
+    #btn-close-popup:hover{
+        background-color: #9a9898;
+    }
+
+
+@media screen and (max-width : 1000px) {
+    header {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    #match-fixtures{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card-match{
+        margin-bottom: 20px;
+        min-width: 40vw;
+    }
+    .content-menu{
+        flex-direction: column;
+    }
+    .social-media .media-icon i{
+        margin: auto 15px;
+    }
+    .centered-alert{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    header {
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul {
+        font-size: 1rem;
+    }
+    #match-fixtures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #match-fixtures h2{
+       position: static;
+       margin-bottom: 12px;
+    }
+    .card-match{
+        margin: auto;
+        min-width: 85vw;
+        margin-bottom: 15px;
+    }
+    .content-menu .content2 article{
+        font-size: 10px;
+    }
+    .content-menu .content2 .content-main img{
+        width: 50vh;
+    }
+    aside .box {
+        margin: 30px 10px 0px 10px;
+    }
+    .content-sponsor .main-sponsor img{
+        width: 110px;
+        margin: 0 5px;
+    }
+    .content-sponsor .side-sponsor{
+        width: 80vw;    
+     }
+    .content-sponsor .side-sponsor img{
+       width: 50px;    
+    }
+    footer .social-media{
+        flex-direction: column;
+    }
+    footer .social-media .media-text{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    footer .social-media .media-icon{
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .social-media .media-icon i{
+        margin: auto 10px;
+    }
+    .centered-alert{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .content-menu .content2 .content-main img{
+        width: 30vh;
+    }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <!-- font -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="madrid-style.css">
+
+    <title>Real Madrid Official</title>
+    <link rel="icon" href="/assets/real-madrid.webp" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="icon-content">
+            <img src="/assets/real-madrid.webp" alt="Real Madrid">
+            <h1>Real Madrid</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trophy">Trophy</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#sponsor">Sponsor</a></li>
+            </ul>
+        </nav>
+        <div id="btn-content">
+            <button id="toggleButton">Night Mode</button>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <article id="match-fixtures">
+                <h2>Match Fixtures</h2>
+                <div id="existingDiv" class="card-match">
+                    <div class="match-name">
+                        <p class="match-date">Sat 10 Feb</p>
+                        <p class="match-leangue">English Premier League</p>
+                        <div>
+                            <img src="/assets/real-madrid.webp" alt="" class="icon-match">
+                            <p class="vs">Real madrid</p>
+                        </div>
+                    </div>
+                    <div class="match-time">
+                        <p>Kick off - 22:30</p>
+                        <p><span>Live</span> on SkySports</p>
+                        <div class="view-match">
+                            <button id="btn-view" onclick="togglePopup()">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="content-menu">
+            <div class="content2" id="home">
+                <article>
+                    <div class="content-head">
+                        <h2>Home</h2>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-img">
+                            <img src="/assets/stadion.webp" alt="real-madrid">   
+                        </div>
+                        <p>Klub Real Madrid adalah salah satu klub sepak bola terkemuka yang berbasis di Madrid, Spanyol. Didirikan pada tahun 1902, Real Madrid telah menjadi salah satu klub paling sukses dalam sejarah sepak bola. Mereka telah memenangkan sejumlah gelar domestik dan internasional yang prestisius, termasuk Liga Champions UEFA (sebelumnya dikenal sebagai Piala Champions Eropa) yang telah mereka menangkan lebih dari dua puluh kali.</p>
+                        <p>Real Madrid memiliki basis penggemar yang sangat besar di seluruh dunia dan dikenal karena memiliki sejarah pemain-pemain bintang, termasuk legenda-legenda sepak bola seperti Alfredo Di Stefano, Ferenc Puskas, Cristiano Ronaldo, dan banyak lagi.</p>
+                        <p></p>
+                    </div>
+                </article>
+                <article id="trophy">
+                    <div class="content-head">
+                        <h2>Trophy</h2>
+                    </div>
+                    <div class="content-main">
+                        <div class="content-img">
+                            <img src="/assets/tropy.webp" alt="real-madrid">   
+                        </div>
+                        <p>Hingga saat ini, Real Madrid merupakan salah satu klub sepak bola terkemuka di dunia dengan sejarah yang sangat sukses. Di bawah ini adalah beberapa statistik trofi terkenal yang telah mereka raih:</p>
+                        <ol type="1">
+                            <li>Champions UEFA : 14 Piala</li>
+                            <li>La Liga Spanyol : 35 Piala</li>
+                            <li>Copa Del Rey : 20 Piala</li>
+                            <li>Supercopa Espana : 13 Piala</li>
+                            <li>Super Eropa : 4 Piala</li>
+                            <li>Club World Cup : 8 Piala</li>
+                        </ol>
+                        <p>Real Madrid memiliki basis penggemar yang sangat besar di seluruh dunia dan dikenal karena memiliki sejarah pemain-pemain bintang, termasuk legenda-legenda sepak bola seperti Alfredo Di Stefano, Ferenc Puskas, Cristiano Ronaldo, dan banyak lagi.</p>
+                        <p></p>
+                    </div>
+                </article>
+            </div>
+            <aside>
+                <div>
+                    <h2>Player Cards</h2>
+                </div>
+                <div id="outer-box">
+                    <div id="divBox" class="box">
+                        <div class="imgBox">
+                            <img src="/assets/player/vini.jpg" alt="">
+                        </div>
+                        <div class="card-box-content">
+                            <div>
+                                <h2>Vinicius</h2>
+                            </div>
+                            <p>Striker</p>
+                        </div>
+                    </div>
+                </div>         
+            </aside>
+        </div>
+        <div class="content-product" id="product">
+            <h2>Product Card</h2>
+            <div class="outer-card">
+                <div class="card-product" id="divProduct">
+                    <div class ="image">
+                        <img src="/assets/product/1kits.webp" alt="">
+                      </div>
+                      <div class ="content-card">
+                        <h3>Home Jersey</h3>
+                        <p>$4,88</p>
+                        <div class="btn-card" id="btnBuy"><button>Buy</button></div>
+                    </div>
+                </div>   
+            </div> 
+        </div>
+        <div class="content-sponsor" id="sponsor">
+            <div class="main-sponsor">
+                <img src="/assets/sponsor/adidas_gray.svg" alt="Adidas">
+                <img src="/assets/sponsor/emirates_gray.svg" alt="Fly Emirates">
+                <img src="/assets/sponsor/HP.svg" alt="HP">
+            </div>
+            <div class="side-sponsor">
+                <img src="/assets/sponsor/bmw_gray.svg" alt="BMW">
+                <img src="/assets/sponsor/cantabria-labs_gray.svg" alt="Cantabria">
+                <img src="/assets/sponsor/cisco_gray.svg" alt="Cisco">
+                <img src="/assets/sponsor/cocacola_gray.svg" alt="Cocacola">
+                <img src="/assets/sponsor/dubai_gray.svg" alt="Dubai">
+                <img src="/assets/sponsor/ea-sports_gray.svg" alt="EA Sport">
+                <img src="/assets/sponsor/easymarkets_gray.svg" alt="Easy Market">
+                <img src="/assets/sponsor/abbott_gray.svg" alt="Abbott">
+                <img src="/assets/sponsor/mahou_gray.svg" alt="Mahou Laliga">
+                <img src="/assets/sponsor/nivea_gray.svg" alt="Nivea">
+                <img src="/assets/sponsor/playstation_gray.svg" alt="PayStation">
+                <img src="/assets/sponsor/canon_gray.svg" alt="Canon">
+                <img src="/assets/sponsor/hth_gray.svg" alt="HTH Group">
+                <img src="/assets/sponsor/solan_gray.svg" alt="Solan">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <div class="media-text">
+                <img src="/assets/real-madrid.webp" alt="">
+                <p>Our Social Media</p>
+            </div>
+            <div class="media-icon">
+                <a href="https://www.facebook.com/RealMadrid/" target="_blank" aria-label="facebook"><i class="fab fa-facebook fa-2xl"></i></i></a>
+                <a href="https://www.instagram.com/realmadrid/" target="_blank" aria-label="instagram"><i class="fab fa-instagram fa-2xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCWV3obpZVGgJ3j9FVhEjF2Q" target="_blank" aria-label="youtube"><i class="fab fa-youtube fa-2xl"></i></a>
+                <a href="https://twitter.com/realmadrid?" target="_blank" aria-label="twitter"><i class="fab fa-twitter fa-2xl"></i></a>
+                <a href="https://www.tiktok.com/@realmadrid" target="_blank" aria-label="tiktok"><i class="fab fa-tiktok fa-2xl"></i></a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p>Real Madrid &copy; 2024 All rights reserved</p>
+        </div>
+    </footer>
+    <div id="blurLayer" class="blur-layer"></div>
+
+        <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+
+        //Untuk Mode Gelap
+        const toggleButton = document.getElementById('toggleButton');
+        const container = document.querySelector('body');
+        toggleButton.addEventListener('click', () => {
+            container.classList.toggle('dark-mode');
+            container.classList.toggle('body-dark');
+        });
+
+
+        // Clone Div Fixtures Card
+        var existingDivs = document.getElementsByClassName('card-match');
+        // Ambil salah satu dari elemen div yang sudah ada
+        var existingDiv = existingDivs[0];
+        var jumlahDivBaru = 3;
+        for (var i = 0; i < jumlahDivBaru; i++) {
+            // Clone elemen div yang sudah ada, termasuk semua turunannya
+            var clonedDiv = existingDiv.cloneNode(true);
+            clonedDiv.querySelectorAll('p').textContent = '';
+            // Tambahkan elemen div baru sebagai child dari div kontainer yang sama
+            existingDiv.parentNode.appendChild(clonedDiv);
+        }
+
+        //Untuk Pop Up pada View Fixtures
+        function togglePopup() {
+            var alertBox = document.createElement('div');
+                alertBox.className = 'centered-alert';
+                alertBox.innerHTML = '<h2>More Info</h2>' +
+                                        '<table>'+
+                                        '<tr><th>Match</th><td>:</td><td>Home</td></tr>'+
+                                        '<tr><th>Location</th><td>:</td><td>North Spain</td></tr>'+
+                                        '<tr><th>Stadium</th><td>:</td><td>Santiago Bernabeu</td></tr>'+
+                                        '<tr><th>Capacity</th><td>:</td><td>80.000</td></tr>'+
+                                        '</table>' + 
+                                        '<div id="div-btn"><button onclick="closeCenteredAlert()" id="btn-close-popup">Close</button></div>';
+                document.body.appendChild(alertBox);
+
+                var blurLayer = document.getElementById('blurLayer');
+                if (blurLayer) {
+                    blurLayer.style.display = 'block';
+                }
+                // Menonaktifkan scroll ketika popup ditampilkan
+                document.body.style.overflow = 'hidden';  
+                
+                setTimeout(function() {
+                    alertBox.classList.add('show');
+                }, 100);
+        }
+
+        function closeCenteredAlert() {
+            var alertBox = document.querySelector('.centered-alert');
+            if (alertBox) {
+                alertBox.classList.remove('show');
+                setTimeout(function() {
+                alertBox.parentNode.removeChild(alertBox);
+                }, 300);
+            }
+
+            var blurLayer = document.getElementById('blurLayer');
+            if (blurLayer) {
+                blurLayer.style.display = 'none';
+            }
+            document.body.style.overflow = 'auto';
+        }
+
+        // Clone Div untuk Card Player
+        var existingDivsBox = document.getElementsByClassName('box');
+        var jumlahDivBoxBaru = 11;
+        var tagH2 = [
+            'Rodrygo',
+            'Bellingham',
+            'Kroos',
+            'Valverde',
+            'Camavinga',
+            'Tchouameni',
+            'Carvajal',
+            'Fran Garcia',
+            'Rudiger',
+            'Nacho',
+            'Lunin',
+        ];
+        var tagSpan = [
+            'Striker',
+            'Midfielder',
+            'Midfielder',
+            'Midfielder',
+            'Midfielder',
+            'Midfielder',
+            'Defender',
+            'Defender',
+            'Defender',
+            'Defender',
+            'Goal Keeper',
+        ];
+        var imgSources = [
+            '/assets/player/rodrygo.jpg',
+            '/assets/player/belingham.jpeg',
+            '/assets/player/kroos.jpg',
+            '/assets/player/valverde.jpg',
+            '/assets/player/camavinga.jpg',
+            '/assets/player/tchouameni.jpg',
+            '/assets/player/carvajal.jpeg',
+            '/assets/player/fran-garcia.jpg',
+            '/assets/player/rudiger.jpeg',
+            '/assets/player/nacho.jpg',
+            '/assets/player/lunin.jpg',
+        ];
+        for (var b = 0; b < jumlahDivBoxBaru; b++) {
+            var clonedDivBox = existingDivsBox[0].cloneNode(true);
+            // Atur ID unik untuk div baru
+            clonedDivBox.id = 'divBox' + (b + 1);
+            // Ganti teks pada tag h2 di dalam div yang di-klon
+            clonedDivBox.querySelector('.card-box-content h2').innerText = tagH2[b];
+            clonedDivBox.querySelector('.card-box-content p').innerText = tagSpan[b];
+            // Ganti sumber gambar pada tag img di dalam div yang di-klon
+            clonedDivBox.querySelector('.imgBox img').src = imgSources[b];
+            clonedDivBox.querySelector('.imgBox img').alt = 'New Image ' + (b + 1);
+            // Tambahkan elemen div baru sebagai child dari div kontainer yang sama
+            existingDivsBox[0].parentNode.appendChild(clonedDivBox);
+        }
+
+
+        // Clone div untuk Card Product
+        var existingDivsCard = document.getElementsByClassName('card-product');
+        var jumlahDivCardBaru = 4;
+        let produkName = [
+            'Third Shirts',
+            'Socks',
+            'Stadium Turf',
+            'Keyring',
+        ];
+        let produkImg = [
+            '/assets/product/3kits.webp',
+            '/assets/product/socks.webp',
+            '/assets/product/miniatur.webp',
+            '/assets/product/keyring.webp',
+        ];
+        let produkPrice = [
+            '$100,00',
+            '$10,00',
+            '$55,00',
+            '$7,00',
+        ];
+        for (var b = 0; b < jumlahDivCardBaru; b++) {
+            var clonedDivCard = existingDivsCard[0].cloneNode(true);
+            clonedDivCard.id = 'divProduct' + (b + 1);
+            clonedDivCard.querySelector('.content-card h3').innerText = produkName[b];
+            clonedDivCard.querySelector('.content-card p').innerText = produkPrice[b];
+            clonedDivCard.querySelector('.card-product img').src = produkImg[b];
+            clonedDivCard.querySelector('.card-product img').alt = 'New Image ' + (b + 1);
+            existingDivsCard[0].parentNode.appendChild(clonedDivCard);
+
+            // supaya pop up bisa dipakai juga di div clone
+            const btnBuyClone = clonedDivCard.querySelector('#btnBuy');
+            btnBuyClone.addEventListener('click', function() {
+                Swal.fire({
+                    title: "Successful Purchase!",
+                    icon: "success"
+                });
+            });
+        }
+
+        const btnBuy = document.getElementById('btnBuy');
+        btnBuy.addEventListener('click', () => {
+            Swal.fire({
+                title: "Successful Purchase!",
+                icon: "success"
+            });
+        });
+
+    </script>
+    
+</body>
+</html>
